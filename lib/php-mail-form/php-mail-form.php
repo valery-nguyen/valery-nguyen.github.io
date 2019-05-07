@@ -76,7 +76,7 @@ class PHP_Mail_Form {
     $headers .= 'MIME-Version: 1.0' . PHP_EOL;
     $headers .= 'Content-Type: ' . $this->content_type . '; charset=' . $this->charset . PHP_EOL;
     $headers .= 'X-Mailer: PHP/' . phpversion() . ' with PHP_Mail_Form';
-
+    debugger;
     $sendemail = mail($to, $subject, $message, $headers);
 
     if( $sendemail ) {
