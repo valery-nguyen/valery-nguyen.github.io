@@ -54,39 +54,39 @@ jQuery(document).ready(function( $ ) {
   ];
   var myDoughnut = new Chart(document.getElementById("react-redux").getContext("2d")).Doughnut(doughnutData);
 
-  // MongoDB Chart
+  // GraphQL Chart
   var doughnutData = [{
-    value: 65,
+    value: 85,
     color: "#1abc9c"
   },
   {
-    value: 35,
+    value: 15,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("graphql").getContext("2d")).Doughnut(doughnutData);
+
+  // Docker Chart
+  var doughnutData = [{
+    value: 75,
+    color: "#1abc9c"
+  },
+  {
+    value: 25,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("docker").getContext("2d")).Doughnut(doughnutData);
+
+  // MongoDB Chart
+  var doughnutData = [{
+    value: 75,
+    color: "#1abc9c"
+  },
+  {
+    value: 25,
     color: "#ecf0f1"
   }
   ];
   var myDoughnut = new Chart(document.getElementById("mongodb").getContext("2d")).Doughnut(doughnutData);
-
-  // Express Chart
-  var doughnutData = [{
-    value: 65,
-    color: "#1abc9c"
-  },
-  {
-    value: 35,
-    color: "#ecf0f1"
-  }
-  ];
-  var myDoughnut = new Chart(document.getElementById("express").getContext("2d")).Doughnut(doughnutData);
-
-  // Node Chart
-  var doughnutData = [{
-    value: 65,
-    color: "#1abc9c"
-  },
-  {
-    value: 35,
-    color: "#ecf0f1"
-  }
-  ];
-  var myDoughnut = new Chart(document.getElementById("node").getContext("2d")).Doughnut(doughnutData);
 });
