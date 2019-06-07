@@ -88,7 +88,7 @@ hr {
 }
 
 #topbar-inner {
-  background: #111;
+  background: #011627;
   line-height: 0;
   text-align: center;
 }
@@ -131,7 +131,7 @@ By default, top navigation bar uses "fixed" position
 }
 
 #section-topbar ul#nav a:hover {
-  background: #222;
+  background: #FF9F1C;
   text-decoration: none;
   border-left: 1px solid #111;
 }
@@ -188,7 +188,7 @@ SECTION WRAPS
 /* Intnro Wrap */
 
 #intro {
-  background: #2c3e50;
+  background: #1D3557;
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
@@ -206,7 +206,7 @@ SECTION WRAPS
 }
 
 #skillswrap {
-  background: #2c3e50;
+  background: #1D3557;
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
