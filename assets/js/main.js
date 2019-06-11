@@ -27,6 +27,13 @@
 			}, 100);
 		});
 
+	// Individual link (VTN)
+	var $projectsLink = $('#projects-link');
+	$projectsLink.scrolly({
+			speed: 1000,
+		offset: function () { return $projectsLink.height(); }
+		})
+
 	// Nav.
 		var $nav = $('#nav');
 
