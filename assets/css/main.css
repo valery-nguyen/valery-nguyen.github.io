@@ -3786,7 +3786,16 @@ input, select, textarea {
 		}
 
 /* Skills Icons */
-
 .icons2 {
 	font-size: 160px;
+}
+
+/* Education Icons */
+.education-section img {
+	width: 150px;
+	height: calc(150px * 705 / 1501);
+}
+
+#projects-link {
+	color: red;
 }
