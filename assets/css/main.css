@@ -3344,7 +3344,7 @@ input, select, textarea {
 		}
 
 		#main a:hover {
-			color: #636363;
+			color: red;
 		}
 
 		#main strong, #main b {
