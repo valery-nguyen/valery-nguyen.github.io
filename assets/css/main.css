@@ -3344,7 +3344,7 @@ input, select, textarea {
 		}
 
 		#main a:hover {
-			color: red;
+			color: purple;
 		}
 
 		#main strong, #main b {
@@ -3797,5 +3797,5 @@ input, select, textarea {
 }
 
 #projects-link {
-	color: red;
+	color: purple;
 }
