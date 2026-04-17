@@ -1,281 +1,1168 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141233442-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Valery Nguyen — Software Engineer based in the San Francisco Bay Area. React, Redux, Go, Cloud, and more." />
+<meta property="og:title" content="Valery Nguyen — Software Engineer" />
+<meta property="og:description" content="Software Engineer based in the San Francisco Bay Area." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<title>Valery Nguyen — Software Engineer</title>
+<link rel="icon" href="images/favicon.png" />
 
-			gtag('config', 'UA-141233442-1');
-		</script>
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-		<title>Valery Nguyen</title>
-		<meta charset="utf-8" />
-		<link href="images/favicon.png" rel="icon">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
-		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<!-- Devicon via jsDelivr (replacing broken rawgit) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-		
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		</head>
-	<body class="is-preload">
+<style>
+  /* ---------- Tokens ---------- */
+  :root {
+    --font-sans: "Roboto", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    --font-display: "Roboto", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    --radius-sm: 12px;
+    --radius-md: 20px;
+    --radius-lg: 28px;
 
-				<!-- Nav -->
-					<nav id="nav" class="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">Story</a></li>
-							<li><a href="#second">Background</a></li>
-							<li><a href="#third">Skills</a></li>
-							<li><a href="#fourth">Portfolio</a></li>
-							<li><a href="#fifth">Contact</a></li>
-							<li><a href="Resume_Valery-Nguyen.pdf" target="_blank">Resume</a></li>
-						</ul>
-					</nav>
+    --dur-fast: 180ms;
+    --dur-med: 360ms;
+    --dur-slow: 700ms;
+    --ease: cubic-bezier(.2,.7,.2,1);
 
-				<!-- Main -->
-					<div id="main">
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Hi, I'm <b>Valery Nguyen</b></h2>
-										</header>
-										<h3>Software Engineer located in San Francisco Bay Area</h3>
-										<h3>Check out some of my recent <a id="projects-link" href="#fourth">projects</a>&nbsp;!</h3>
-									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-								</div>
-							</section>
+    --max-w: 1200px;
 
-						<!-- Story -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Story</h2>
-								</header>
-								<p>
-									As a problem solver turned Software Engineer, I enjoy collaborating with other engineers and developers and tackling challenging problems together. 
-									What I like most is solving complex problems all over the stack. 
-								</p>
-								<p>
-									I specialize in JavaScript, ReactJS, ReduxJS, Angular, Go, C++, Java, Ruby on Rails, Google Cloud Platform,
-									as well as in other technologies like GraphQL, Docker, Kubernetes, PostgreSQL, MySQL, MongoDB, Microsoft Server SQL, Express.js, and Node.js.
-								</p>
-								<p>
-									After graduating from UCLA with a Bachelor of Science degree, I started my career with ORANO. There, I worked 2 years on automation hardware and 5+ years on the control systems software. 
-								</p>
-								<p>
-									Moving back to the Bay Area, I decided to focus on Web Development and stepped in the Tech industry with AlertEnterprise. After 1.5 year, I joined Google, where I am at presently.
-								</p>
-								<p>
-									Outside of Web Development, I am also passionate about emerging tech (e.g blockchain, AI) and their impact on
-									international economics + social policies. As I lived in France for 17 years, I like exploring what makes each culture
-									unique and exciting!
-								</p>
-							</section>
+    /* Google brand colors */
+    --g-blue: #4285F4;
+    --g-red: #EA4335;
+    --g-yellow: #FBBC04;
+    --g-green: #34A853;
 
-						<!-- Story -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Education</h2>
-								</header>
-								<section class="education-section">
-									<p>
-										<img src="images/ucla.png" alt="ucla">
-										<h3>University of California, Los Angeles </h3>
-										<p>Bachelor of Science, 2011</p>
-									</p>
-									
-								</section>
-								<header class="major">
-									<h2>Work</h2>
-								</header>
-								<span class="icon solid major style3 fa-code"></span>
-								<h3>Software Engineer</h3>
-								<h4>Google</h4>
-								<h5>MAY 2021 - PRESENT</h5>
+    /* Light theme (default) — Google/Material-inspired */
+    --bg: #ffffff;
+    --bg-elev: #f8f9fa;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f1f3f4;
+    --border: rgba(32,33,36,.10);
+    --border-strong: rgba(32,33,36,.20);
+    --text: #202124;
+    --text-muted: #5f6368;
+    --text-dim: #80868b;
+    --accent: var(--g-blue);
+    --accent-2: var(--g-green);
+    --accent-warm: var(--g-yellow);
+    --accent-red: var(--g-red);
+    --accent-text: #ffffff;
+    --glow: 0 10px 40px -12px color-mix(in oklab, var(--accent) 35%, transparent);
 
-								<p>Maintaining and improving the experimentation infrastructure which provides the means to run A/B tests and launches for all Google products, such as Ads, Search, Youtube, Apps, Maps, and Cloud.</p>
+    --shadow-sm: 0 1px 2px rgba(60,64,67,.08), 0 1px 3px rgba(60,64,67,.10);
+    --shadow-md: 0 1px 2px rgba(60,64,67,.10), 0 4px 12px rgba(60,64,67,.10);
+    --shadow-lg: 0 2px 6px rgba(60,64,67,.12), 0 12px 32px rgba(60,64,67,.12);
+  }
 
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Software Engineer</h3>
-										<h4>AlertEnterprise</h4>
-										<h5>SEP 2019 - MAY 2021</h5>
-										
-										<p>I collaborated on a team of 6 to architect the infrastructure solutions for new cloud-based product services running on
-											Google Cloud Platform, containerized microservices using Docker, and built Kubernetes and Helm manifests used for deployments to Google
-											Kubernetes Engine.</p>
-									</li>
-									<li>
-										<span class="icon solid major style2 fa-code"></span>
-										<h3>Software Engineer</h3>
-										<h4>Orano</h4>
-										<h5>OCT 2011 - JAN 2019</h5>
-										<p>I designed, implemented, and tested software solutions for nuclear fuel manufacturing material handling, part
-											tracking, and data storage and retrieval. The software applications were specifically for Siemens Programmable Logic
-											Controllers and developed using Siemens STEP 7.</p>
-									</li>
-									<li>
-										<span class="icon solid major style4 fa-cogs"></span>
-										<h3>Mechanical Engineer</h3>
-										<h4>Orano</h4>
-										<h5>JANUARY 2015 - APRIL 2017</h5>
-										<p>I performed structural analysis on support structures for automation systems' hardware utilizing ANSYS Mechanical in
-										order to verify and ensure the structures' integrity under extreme operating conditions.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="Resume_Valery-Nguyen.pdf" target="_blank" class="button">more details</a></li>
-									</ul>
-								</footer>
-							</section>
+  [data-theme="dark"] {
+    --bg: #0f1013;
+    --bg-elev: #17191d;
+    --bg-card: #1c1e22;
+    --bg-card-hover: #23262b;
+    --border: rgba(255,255,255,.08);
+    --border-strong: rgba(255,255,255,.18);
+    --text: #e8eaed;
+    --text-muted: #9aa0a6;
+    --text-dim: #70757a;
+    --accent: #8ab4f8;         /* Google's dark-mode blue */
+    --accent-2: #81c995;        /* dark-mode green */
+    --accent-warm: #fdd663;     /* dark-mode yellow */
+    --accent-red: #f28b82;      /* dark-mode red */
+    --accent-text: #202124;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.30), 0 1px 3px rgba(0,0,0,.35);
+    --shadow-md: 0 2px 4px rgba(0,0,0,.35), 0 6px 16px rgba(0,0,0,.40);
+    --shadow-lg: 0 4px 10px rgba(0,0,0,.45), 0 14px 40px rgba(0,0,0,.45);
+  }
 
-						<!-- Skills Section -->
-							<section id="third" class="main special">
-								<header class="major">
-									<h2>Skills</h2>
-								</header>
-								<ul class="features">
-									<li><i class="icons2 devicon-react-original-wordmark colored"></i></li>
-									<li style="height:180px" >
-										<svg style="height:120px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g fill="#764ABC"><path d="M65.6 65.4c2.9-.3 5.1-2.8 5-5.8-.1-3-2.6-5.4-5.6-5.4h-.2c-3.1.1-5.5 2.7-5.4 5.8.1 1.5.7 2.8 1.6 3.7-3.4 6.7-8.6 11.6-16.4 15.7-5.3 2.8-10.8 3.8-16.3 3.1-4.5-.6-8-2.6-10.2-5.9-3.2-4.9-3.5-10.2-.8-15.5 1.9-3.8 4.9-6.6 6.8-8-.4-1.3-1-3.5-1.3-5.1-14.5 10.5-13 24.7-8.6 31.4 3.3 5 10 8.1 17.4 8.1 2 0 4-.2 6-.7 12.8-2.5 22.5-10.1 28-21.4z"/><path d="M83.2 53c-7.6-8.9-18.8-13.8-31.6-13.8H50c-.9-1.8-2.8-3-4.9-3h-.2c-3.1.1-5.5 2.7-5.4 5.8.1 3 2.6 5.4 5.6 5.4h.2c2.2-.1 4.1-1.5 4.9-3.4H52c7.6 0 14.8 2.2 21.3 6.5 5 3.3 8.6 7.6 10.6 12.8 1.7 4.2 1.6 8.3-.2 11.8-2.8 5.3-7.5 8.2-13.7 8.2-4 0-7.8-1.2-9.8-2.1-1.1 1-3.1 2.6-4.5 3.6 4.3 2 8.7 3.1 12.9 3.1 9.6 0 16.7-5.3 19.4-10.6 2.9-5.8 2.7-15.8-4.8-24.3z"/><path d="M32.4 67.1c.1 3 2.6 5.4 5.6 5.4h.2c3.1-.1 5.5-2.7 5.4-5.8-.1-3-2.6-5.4-5.6-5.4h-.2c-.2 0-.5 0-.7.1-4.1-6.8-5.8-14.2-5.2-22.2.4-6 2.4-11.2 5.9-15.5 2.9-3.7 8.5-5.5 12.3-5.6 10.6-.2 15.1 13 15.4 18.3 1.3.3 3.5 1 5 1.5-1.2-16.2-11.2-24.6-20.8-24.6-9 0-17.3 6.5-20.6 16.1-4.6 12.8-1.6 25.1 4 34.8-.5.7-.8 1.8-.7 2.9z" class="icons" /></g></svg>
-										<p style="color: #764abc; font-size: 40px; font-weight:700;">Redux</p>
-									</li>
-									<li><i class="icons2 devicon-angularjs-plain colored"></i></li>
-									<li><i class="icons2 devicon-javascript-plain colored"></i></li>
-									<li><i class="icons2 devicon-html5-plain-wordmark colored"></i></li>
-									<li><i class="icons2 devicon-css3-plain-wordmark colored"></i></li>
-									<li><i class="icons2 devicon-go-plain colored"></i></li>
-									<li><i class="icons2 devicon-cplusplus-plain colored"></i></li>
-									<li><i class="icons2 devicon-java-plain-wordmark colored"></i></li>
-									<li><i class="icons2 devicon-ruby-plain-wordmark colored"></i></li>
-									<li><i class="icons2 devicon-rails-plain-wordmark colored"></i></li>
-									<li><i class="icons2 devicon-nodejs-plain-wordmark colored"></i></li>
-									<li><i class="icons2 devicon-express-original-wordmark colored"></i></li>
-									<li><i class="icons2 devicon-mongodb-plain-wordmark colored"></i></li>
-									<li><i class="icons2 devicon-postgresql-plain-wordmark colored"></i></li>
-									<li><i class="icons2 devicon-mysql-plain-wordmark colored"></i></li>
-									<li><i class="icons2 devicon-d3js-plain colored"></i></li>
-									<li><i class="icons2 devicon-docker-plain-wordmark colored"></i></li>
-									<li><i class="icons2 devicon-heroku-plain-wordmark colored"></i></li>
-									<li><i class="icons2 devicon-github-plain-wordmark colored"></i></li>
-								</ul>
-							</section>
+  /* ---------- Reset / Base ---------- */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    transition: background var(--dur-med) var(--ease), color var(--dur-med) var(--ease);
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; cursor: pointer; background: none; border: 0; color: inherit; }
+  h1, h2, h3, h4, h5 { margin: 0; font-weight: 600; letter-spacing: -.015em; }
+  p { margin: 0 0 1em; color: var(--text-muted); font-size: 16px; }
+  .tl-item p { color: var(--text-muted); }
 
-						<!-- Portfolio Section -->
-							<section id="fourth" class="main special">
-								<header class="major">
-									<h2>Portfolio</h2>
-								</header>
-								<section>
-									<a href="https://github.com/valery-nguyen/somethingSpecial" target="_blank" ><img class="image fit" src="images/port01.jpg" alt=""></a>
-									<h4>Online Retailer Web App providing a wide range of unique gifts ideas for the users to choose and order from.</h4>
-									<p>Ruby-on-Rails, React.js, Redux.js</p>
-									<footer class="major">
-										<ul class="actions special">
-											<li><a href="https://github.com/valery-nguyen/somethingSpecial" target="_blank" class="button">github</a></li>
-										</ul>
-									</footer>
-								</section>
-								<header class="major">
-									<h2></h2>
-								</header>
-								<section>
-									<a href="https://github.com/valery-nguyen/coolbnb" target="_blank"><img class="image fit" src="images/port02.jpg" alt=""></a>
-									<h4>Service Web App giving users the possibility to search and book lodging, filtered by location, dates, type, and price.</h4>
-									<p>MongoDB, Express.js, React.js, Redux.js, Node.js</p>
-									<footer class="major">
-										<ul class="actions special">
-											<li><a href="https://github.com/valery-nguyen/coolbnb" target="_blank" class="button">github</a></li>
-										
-										</ul>
-									</footer>
-								</section>
-								<header class="major">
-									<h2></h2>
-								</header>
-								<section>
-									<a href="https://github.com/valery-nguyen/lightchat" target="_blank"><img class="image fit" src="images/port04.jpg" alt=""></a>
-									<h4>Communication Web App giving users the possibility post messages on various channels, as well as send direct messages to
-									other users.</h4>
-									<p>GraphQL, Docker, MongoDB, Express.js, React.js, Node.js</p>
-									<footer class="major">
-										<ul class="actions special">
-											<li><a href="https://github.com/valery-nguyen/lightchat" target="_blank" class="button">github</a></li>
-										</ul>
-									</footer>
-								</section>
-								<header class="major">
-									<h2></h2>
-								</header>
-								<section>
-									<a href="https://github.com/valery-nguyen/GameOfThrones-D3" target="_blank"><img class="image fit" src="images/port03.jpg" alt=""></a>
-									<h4>GameOfThrones-D3 explores the interactions between the various characters of HBO series Game of Thrones through several
-									D3.js visualization techniques.</h4>
-									<p>D3.js, React.js, Redux.js, Express.js, Node.js</p>
-									<footer class="major">
-										<ul class="actions special">
-											<li><a href="https://github.com/valery-nguyen/GameOfThrones-D3" target="_blank" class="button">github</a></li>
-										</ul>
-									</footer>
-								</section>
-								
-							</section>
-					</div>
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+  ::selection { background: color-mix(in oklab, var(--accent) 35%, transparent); color: var(--text); }
 
-				<!-- Footer -->
-					<section id="fifth" class="main special">
-						<footer id="footer">
-							<section>
-								<h2>Contact</h2>
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/valeryn/" target="_blank" class="icon brands fa-linkedin alt"><span
-												class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/valery-nguyen" target="_blank" class="icon brands fa-github alt"><span
-												class="label">GitHub</span></a></li>
-									<li><a href="https://angel.co/valeryn" target="_blank" class="icon brands fa-angellist alt"><span
-												class="label">AngelList</span></a></li>
-								</ul>
-							</section>
-							<section>
-								<dl class="alt">
-									<dt>Address</dt>
-									<dd>San Jose, CA</dd>
-									<dt>Phone</dt>
-									<dd>(408) 886-8447</dd>
-									<dt>Email</dt>
-									<dd><a href="mailto:valery.nguyen@ucla.edu">valery.nguyen@ucla.edu</a></dd>
-								</dl>
-							</section>
-							<p class="copyright">&copy; 2023 &nbsp; Valery Nguyen</p>
-						</footer>
-					</section>
-			</div>
+  /* ---------- Ambient background (soft, cheerful Google-color blobs) ---------- */
+  .ambient {
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background:
+      radial-gradient(520px 420px at var(--mx, 18%) var(--my, 12%),
+        color-mix(in oklab, var(--g-blue) 18%, transparent), transparent 65%),
+      radial-gradient(420px 360px at 85% 20%,
+        color-mix(in oklab, var(--g-red) 12%, transparent), transparent 65%),
+      radial-gradient(460px 380px at 90% 85%,
+        color-mix(in oklab, var(--g-yellow) 14%, transparent), transparent 65%),
+      radial-gradient(420px 360px at 15% 90%,
+        color-mix(in oklab, var(--g-green) 14%, transparent), transparent 65%);
+    transition: background var(--dur-slow) var(--ease);
+  }
+  [data-theme="dark"] .ambient { opacity: .55; }
+  .grain { display: none; } /* drop grain for a cleaner Google feel */
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  /* ---------- Scroll progress ---------- */
+  .scroll-progress {
+    position: fixed; top: 0; left: 0; height: 2px; width: 0%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    z-index: 100; transition: width 80ms linear;
+  }
 
-	</body>
+  /* ---------- Nav ---------- */
+  .nav {
+    position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+    display: flex; align-items: center; gap: 4px;
+    padding: 8px;
+    background: color-mix(in oklab, var(--bg-elev) 85%, transparent);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    z-index: 50;
+    box-shadow: var(--shadow-md);
+  }
+  .nav a {
+    padding: 8px 14px; border-radius: 999px; font-size: 13.5px;
+    color: var(--text-muted);
+    transition: color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+    white-space: nowrap;
+  }
+  .nav a:hover { color: var(--text); }
+  .nav a.active {
+    color: var(--accent-text);
+    background: var(--accent);
+  }
+  .nav .resume-link {
+    background: transparent; border: 1px solid var(--border-strong); color: var(--text);
+  }
+  .nav .resume-link:hover { background: var(--bg-card-hover); }
+  .theme-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px; border-radius: 999px; margin-left: 4px;
+    border: 1px solid var(--border);
+    transition: transform var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+  }
+  .theme-toggle:hover { background: var(--bg-card-hover); transform: rotate(20deg); }
+  .theme-toggle svg { width: 16px; height: 16px; }
+
+  @media (max-width: 780px) {
+    .nav { gap: 0; padding: 6px; overflow-x: auto; max-width: calc(100% - 32px); }
+    .nav a { padding: 6px 10px; font-size: 12.5px; }
+  }
+
+  /* ---------- Layout ---------- */
+  main { position: relative; z-index: 2; }
+  .section {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: clamp(80px, 12vw, 140px) 28px;
+    position: relative;
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--font-sans);
+    font-size: 12px; font-weight: 600;
+    letter-spacing: .14em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 20px;
+  }
+  .eyebrow::before {
+    content: ""; width: 28px; height: 2px; background: var(--accent);
+    border-radius: 2px;
+  }
+  #story .eyebrow { color: var(--g-blue); }
+  #story .eyebrow::before { background: var(--g-blue); }
+  #background .eyebrow { color: var(--g-red); }
+  #background .eyebrow::before { background: var(--g-red); }
+  #skills .eyebrow { color: #e0a800; }               /* stronger yellow for light-bg text readability */
+  #skills .eyebrow::before { background: var(--g-yellow); }
+  #portfolio .eyebrow { color: var(--g-green); }
+  #portfolio .eyebrow::before { background: var(--g-green); }
+  #contact .eyebrow { color: var(--g-blue); }
+  #contact .eyebrow::before { background: var(--g-blue); }
+  .section-title {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    margin-bottom: 28px;
+    color: var(--text);
+  }
+  .section-title em {
+    font-style: normal;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    max-width: var(--max-w); margin: 0 auto;
+    padding-left: 28px; padding-right: 28px;
+    position: relative;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  @media (max-width: 880px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+  .status-pill {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 7px 14px; border-radius: 999px;
+    background: color-mix(in oklab, var(--g-green) 14%, var(--bg));
+    border: 1px solid color-mix(in oklab, var(--g-green) 35%, transparent);
+    color: var(--text);
+    font-size: 13px;
+    margin-bottom: 28px;
+    font-weight: 500;
+  }
+  .status-pill::before {
+    content: ""; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--g-green);
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--g-green) 80%, transparent);
+    animation: pulse 2.2s ease-out infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--g-green) 70%, transparent); }
+    70% { box-shadow: 0 0 0 10px color-mix(in oklab, var(--g-green) 0%, transparent); }
+    100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--g-green) 0%, transparent); }
+  }
+
+  .hero-title {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(48px, 8vw, 96px);
+    line-height: 1.05;
+    letter-spacing: -.035em;
+    margin-bottom: 28px;
+    color: var(--text);
+  }
+  .hero-title b {
+    font-weight: 700;
+    font-style: normal;
+    display: inline-block;
+    background: linear-gradient(90deg,
+      var(--g-blue) 0%,
+      var(--g-red) 33%,
+      var(--g-yellow) 66%,
+      var(--g-green) 100%);
+    background-size: 300% 100%;
+    background-position: 0% 50%;
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    /* run both rise + rainbow so the name isn't invisible */
+    animation: rise 900ms var(--ease) 200ms forwards,
+               rainbowShift 8s ease-in-out 1200ms infinite;
+  }
+  @keyframes rainbowShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .reveal-word {
+    display: inline-block; opacity: 0; transform: translateY(30%);
+    animation: rise 900ms var(--ease) forwards;
+  }
+  @keyframes rise {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-subtitle {
+    font-size: clamp(18px, 1.8vw, 22px);
+    color: var(--text-muted);
+    max-width: 520px;
+    margin-bottom: 20px;
+  }
+  .hero-cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 14px 24px; border-radius: 999px;
+    background: var(--accent); color: var(--accent-text);
+    font-weight: 500; font-size: 15px;
+    letter-spacing: .01em;
+    transition: transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+    margin-top: 16px;
+    will-change: transform;
+    box-shadow: var(--shadow-sm);
+  }
+  .hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg), var(--glow);
+  }
+  .hero-cta .arrow { transition: transform var(--dur-fast) var(--ease); }
+  .hero-cta:hover .arrow { transform: translate(4px, -4px); }
+
+  .hero-portrait {
+    position: relative;
+    aspect-ratio: 1 / 1.1;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--bg-card);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border);
+  }
+  .hero-portrait img {
+    width: 100%; height: 100%; object-fit: cover;
+    transform: scale(1.02);
+    transition: transform 1.2s var(--ease);
+  }
+  .hero-portrait:hover img { transform: scale(1.05); }
+  .hero-portrait::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 70%, color-mix(in oklab, var(--bg) 50%, transparent));
+    pointer-events: none;
+  }
+
+  .hero-meta {
+    display: flex; gap: 28px;
+    margin-top: 44px; flex-wrap: wrap;
+    font-family: var(--font-mono); font-size: 12px; color: var(--text-dim);
+    letter-spacing: .06em; text-transform: uppercase;
+  }
+  .hero-meta span strong {
+    color: var(--text); font-weight: 500; display: block; font-size: 16px;
+    text-transform: none; letter-spacing: normal; font-family: var(--font-sans);
+    margin-top: 2px;
+  }
+
+  /* ---------- Story section ---------- */
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+  }
+  @media (max-width: 880px) {
+    .story-grid { grid-template-columns: 1fr; gap: 30px; }
+  }
+  .story-grid .sticky-head { position: sticky; top: 120px; align-self: start; }
+  .story-grid p { font-size: 17px; line-height: 1.75; margin-bottom: 22px; color: var(--text); }
+  .story-grid p strong { color: var(--text); }
+
+  /* ---------- Timeline ---------- */
+  .timeline {
+    position: relative;
+    padding-left: 40px;
+    margin-top: 40px;
+  }
+  .timeline::before {
+    content: ""; position: absolute; left: 14px; top: 6px; bottom: 6px;
+    width: 2px;
+    background: linear-gradient(180deg,
+      var(--g-blue) 0%,
+      var(--g-red) 35%,
+      var(--g-yellow) 70%,
+      var(--g-green) 100%);
+    opacity: .6;
+  }
+  .tl-item {
+    --tl-accent: var(--g-blue);
+    position: relative;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--dur-med) var(--ease),
+                background var(--dur-fast) var(--ease),
+                border-color var(--dur-fast) var(--ease),
+                box-shadow var(--dur-fast) var(--ease);
+  }
+  .tl-item:nth-of-type(1) { --tl-accent: var(--g-blue); }
+  .tl-item:nth-of-type(2) { --tl-accent: var(--g-red); }
+  .tl-item:nth-of-type(3) { --tl-accent: var(--g-yellow); }
+  .tl-item:nth-of-type(4) { --tl-accent: var(--g-green); }
+  .tl-item::before {
+    content: ""; position: absolute; left: -33px; top: 30px;
+    width: 14px; height: 14px; border-radius: 50%;
+    background: var(--bg);
+    border: 3px solid var(--tl-accent);
+    box-shadow: 0 0 0 4px color-mix(in oklab, var(--tl-accent) 15%, transparent);
+  }
+  .tl-item:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-strong);
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+  }
+  .tl-item.current {
+    background: linear-gradient(135deg,
+      color-mix(in oklab, var(--tl-accent) 8%, var(--bg-card)),
+      var(--bg-card));
+    border-color: color-mix(in oklab, var(--tl-accent) 30%, var(--border));
+  }
+  .tl-item.current::before {
+    background: var(--tl-accent);
+  }
+  .tl-company { color: var(--tl-accent); }
+  .tl-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 16px; flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .tl-role { font-size: 18px; font-weight: 600; color: var(--text); }
+  .tl-date {
+    font-family: var(--font-mono); font-size: 11.5px;
+    color: var(--text-dim); letter-spacing: .06em; text-transform: uppercase;
+  }
+  .tl-company {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--tl-accent); font-weight: 500; font-size: 14.5px;
+    margin-bottom: 10px;
+  }
+  .tl-item p { font-size: 15px; margin-bottom: 0; }
+
+  /* ---------- Education ---------- */
+  .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+    max-width: 900px;
+  }
+  .edu-card {
+    display: flex; align-items: center; gap: 20px;
+    padding: 22px 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--dur-med) var(--ease),
+                background var(--dur-fast) var(--ease),
+                box-shadow var(--dur-med) var(--ease);
+  }
+  .edu-card:hover { background: var(--bg-card-hover); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+  .edu-card img {
+    width: 56px; height: 56px; object-fit: contain;
+    background: #fff; padding: 6px; border-radius: 12px;
+    flex-shrink: 0;
+  }
+  .edu-logo {
+    width: 56px; height: 56px; border-radius: 12px; flex-shrink: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-weight: 800; letter-spacing: .02em;
+    font-size: 17px;
+  }
+  .edu-logo-usc {
+    background: #990000;
+    color: #FFCC00;
+    font-family: "Roboto", sans-serif;
+  }
+  .edu-card h3 { font-size: 17px; line-height: 1.3; margin-bottom: 4px; }
+  .edu-card p { margin: 0; font-size: 14px; color: var(--text-muted); }
+  .edu-tag {
+    display: inline-block; margin-top: 4px;
+    padding: 2px 8px; border-radius: 999px;
+    background: color-mix(in oklab, var(--g-green) 14%, var(--bg));
+    color: color-mix(in oklab, var(--g-green) 75%, var(--text));
+    font-size: 11px; font-weight: 600; letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+
+  /* ---------- Skills ---------- */
+  .skill-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .skill-group {
+    --group-accent: var(--g-blue);
+    position: relative;
+    padding: 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: background var(--dur-fast) var(--ease),
+                border-color var(--dur-fast) var(--ease),
+                transform var(--dur-med) var(--ease),
+                box-shadow var(--dur-med) var(--ease);
+    overflow: hidden;
+  }
+  .skill-group::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: var(--group-accent);
+    transform: scaleX(.35); transform-origin: left;
+    transition: transform var(--dur-med) var(--ease);
+  }
+  .skill-group:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+  .skill-group:hover::before { transform: scaleX(1); }
+  .skill-group:nth-child(1) { --group-accent: var(--g-blue); }
+  .skill-group:nth-child(2) { --group-accent: var(--g-red); }
+  .skill-group:nth-child(3) { --group-accent: var(--g-yellow); }
+  .skill-group:nth-child(4) { --group-accent: var(--g-green); }
+  .skill-group h3 {
+    font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+    color: var(--text); letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .skill-group h3::before {
+    content: ""; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--group-accent);
+  }
+  .skill-list {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    list-style: none; padding: 0; margin: 0;
+  }
+  .skill-chip {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 14px;
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 13px; font-weight: 500; color: var(--text);
+    transition: all var(--dur-fast) var(--ease);
+    cursor: default;
+  }
+  .skill-group .skill-chip:hover {
+    transform: translateY(-2px);
+    border-color: var(--group-accent);
+    color: var(--group-accent);
+    box-shadow: 0 4px 12px -4px color-mix(in oklab, var(--group-accent) 40%, transparent);
+  }
+  .skill-chip i { font-size: 18px; }
+  .skill-chip .swatch {
+    width: 14px; height: 14px; border-radius: 4px;
+    background: currentColor; opacity: .8;
+  }
+
+  /* ---------- Portfolio Bento ---------- */
+  .bento {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+  }
+  .bento-card {
+    position: relative;
+    grid-column: span 3;
+    aspect-ratio: 16 / 11;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    isolation: isolate;
+    transition: transform var(--dur-med) var(--ease);
+  }
+  .bento-card:nth-child(4n+1) { grid-column: span 4; }
+  .bento-card:nth-child(4n+2) { grid-column: span 2; aspect-ratio: 1 / 1.2; }
+  .bento-card:nth-child(4n+3) { grid-column: span 2; aspect-ratio: 1 / 1.2; }
+  .bento-card:nth-child(4n)   { grid-column: span 4; }
+
+  @media (max-width: 780px) {
+    .bento { grid-template-columns: 1fr; }
+    .bento-card, .bento-card:nth-child(n) { grid-column: span 1; aspect-ratio: 16/10; }
+  }
+
+  .bento-card img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 800ms var(--ease), filter 400ms var(--ease);
+    filter: saturate(.95) brightness(.85);
+  }
+  .bento-card:hover { transform: translateY(-4px); }
+  .bento-card:hover img { transform: scale(1.06); filter: saturate(1.1) brightness(.7); }
+
+  .bento-overlay {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 22px;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,.85));
+    color: #fff;
+    z-index: 2;
+  }
+  .bento-overlay h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  .bento-overlay p {
+    color: rgba(255,255,255,.85);
+    font-size: 13.5px;
+    margin-bottom: 12px;
+    max-height: 0; opacity: 0;
+    transition: max-height var(--dur-med) var(--ease), opacity var(--dur-med) var(--ease), margin var(--dur-med) var(--ease);
+    overflow: hidden;
+  }
+  .bento-card:hover .bento-overlay p {
+    max-height: 120px; opacity: 1;
+  }
+  .tech-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tech-chip {
+    font-size: 11.5px; padding: 4px 10px; border-radius: 999px;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(8px);
+    color: #fff;
+  }
+  .bento-cta {
+    position: absolute; top: 16px; right: 16px;
+    width: 40px; height: 40px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: rgba(255,255,255,.14);
+    border: 1px solid rgba(255,255,255,.25);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    transition: transform var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+    z-index: 3;
+  }
+  .bento-card:hover .bento-cta {
+    background: var(--accent); color: var(--accent-text); transform: rotate(-45deg);
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+  }
+  @media (max-width: 880px) {
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+  .socials {
+    display: flex; gap: 12px; flex-wrap: wrap;
+    list-style: none; padding: 0; margin: 24px 0 0;
+  }
+  .social-link {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 12px 18px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    transition: all var(--dur-fast) var(--ease);
+    font-size: 14px;
+  }
+  .social-link:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+  }
+  .social-link svg { width: 18px; height: 18px; }
+
+  .contact-card {
+    padding: 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+  .contact-row {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 16px; padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .contact-row:last-child { border-bottom: 0; }
+  .contact-row dt {
+    font-family: var(--font-mono); font-size: 11.5px;
+    color: var(--text-dim); letter-spacing: .1em; text-transform: uppercase;
+  }
+  .contact-row dd {
+    margin: 0; font-size: 15px; color: var(--text);
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .copy-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 28px; height: 28px; border-radius: 8px;
+    background: var(--bg-elev); border: 1px solid var(--border);
+    color: var(--text-muted);
+    transition: all var(--dur-fast) var(--ease);
+  }
+  .copy-btn:hover { color: var(--accent); border-color: var(--accent); }
+  .copy-btn.copied { color: var(--accent); border-color: var(--accent); background: color-mix(in oklab, var(--accent) 12%, transparent); }
+  .copy-btn svg { width: 14px; height: 14px; }
+
+  /* ---------- Footer ---------- */
+  footer.site-footer {
+    max-width: var(--max-w); margin: 0 auto;
+    padding: 40px 28px 60px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    color: var(--text-dim); font-size: 13px;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-mono);
+  }
+  .site-footer a { color: var(--text-muted); }
+  .site-footer a:hover { color: var(--accent); }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity var(--dur-slow) var(--ease), transform var(--dur-slow) var(--ease);
+  }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .reveal[data-delay="1"] { transition-delay: 80ms; }
+  .reveal[data-delay="2"] { transition-delay: 160ms; }
+  .reveal[data-delay="3"] { transition-delay: 240ms; }
+  .reveal[data-delay="4"] { transition-delay: 320ms; }
+  .reveal[data-delay="5"] { transition-delay: 400ms; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="scroll-progress" id="progress"></div>
+
+<!-- NAV -->
+<nav class="nav" aria-label="Primary">
+  <a href="#intro" class="active">Intro</a>
+  <a href="#story">Story</a>
+  <a href="#background">Background</a>
+  <a href="#skills">Skills</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+  <a href="Resume_Valery-Nguyen.pdf" target="_blank" rel="noopener" class="resume-link">Resume ↗</a>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+  </button>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="intro">
+    <div class="hero-grid">
+      <div>
+        <div class="status-pill">Open to interesting conversations</div>
+        <h1 class="hero-title">
+          <span class="reveal-word" style="animation-delay:0ms">Hi,</span>
+          <span class="reveal-word" style="animation-delay:80ms">I'm</span>
+          <b class="reveal-word" style="animation-delay:200ms">Valery Nguyen</b>
+        </h1>
+        <p class="hero-subtitle">Software Engineer located in San Francisco Bay Area</p>
+        <p class="hero-subtitle">Check out some of my recent <a id="projects-link" href="#portfolio" style="color:var(--g-blue); font-weight:500; border-bottom:2px solid color-mix(in oklab, var(--g-blue) 45%, transparent); transition: border-color .2s;">projects</a>&nbsp;!</p>
+        <a href="#portfolio" class="hero-cta">
+          See recent work
+          <span class="arrow">↗</span>
+        </a>
+
+        <div class="hero-meta">
+          <span>Based in<strong>San Jose, CA</strong></span>
+          <span>Currently<strong>Google</strong></span>
+          <span>Education<strong>UCLA, B.S. '11</strong></span>
+        </div>
+      </div>
+      <div class="hero-portrait" aria-hidden="true">
+        <img src="images/pic01.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="section" id="story">
+    <div class="story-grid">
+      <div class="sticky-head">
+        <div class="eyebrow reveal">Chapter 01</div>
+        <h2 class="section-title reveal"><em>Story</em></h2>
+      </div>
+      <div>
+        <p class="reveal">
+          As a problem solver turned Software Engineer, I enjoy collaborating with other engineers and developers and tackling challenging problems together.
+          What I like most is solving complex problems all over the stack.
+        </p>
+        <p class="reveal" data-delay="1">
+          I specialize in JavaScript, ReactJS, ReduxJS, Angular, Go, C++, Java, Ruby on Rails, Google Cloud Platform,
+          as well as in other technologies like GraphQL, Docker, Kubernetes, PostgreSQL, MySQL, MongoDB, Microsoft Server SQL, Express.js, and Node.js.
+        </p>
+        <p class="reveal" data-delay="2">
+          After graduating from UCLA with a Bachelor of Science degree, I started my career with ORANO. There, I worked 2 years on automation hardware and 5+ years on the control systems software.
+        </p>
+        <p class="reveal" data-delay="3">
+          Moving back to the Bay Area, I decided to focus on Web Development and stepped in the Tech industry with AlertEnterprise. After 1.5 year, I joined Google, where I am at presently.
+        </p>
+        <p class="reveal" data-delay="4">
+          Outside of Web Development, I am also passionate about emerging tech (e.g blockchain, AI) and their impact on
+          international economics + social policies. As I lived in France for 17 years, I like exploring what makes each culture
+          unique and exciting!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACKGROUND (Education + Work) -->
+  <section class="section" id="background">
+    <div class="eyebrow reveal">Chapter 02</div>
+    <h2 class="section-title reveal"><em>Background</em></h2>
+
+    <h3 class="reveal" style="font-family: var(--font-mono); font-size:12px; text-transform:uppercase; letter-spacing:.12em; color:var(--text-dim); margin:30px 0 16px;">Education</h3>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-logo edu-logo-usc" aria-label="USC">USC</div>
+        <div>
+          <h3>University of Southern California</h3>
+          <p>Master of Science in Computer Science</p>
+          <span class="edu-tag">Expected 2028</span>
+        </div>
+      </div>
+      <div class="edu-card reveal" data-delay="1">
+        <img src="images/ucla.png" alt="UCLA" />
+        <div>
+          <h3>University of California, Los Angeles</h3>
+          <p>Bachelor of Science in Mechanical Engineering, 2011</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="reveal" style="font-family: var(--font-mono); font-size:12px; text-transform:uppercase; letter-spacing:.12em; color:var(--text-dim); margin:50px 0 0;">Work</h3>
+
+    <div class="timeline">
+      <article class="tl-item current reveal">
+        <div class="tl-head">
+          <div class="tl-role">Software Engineer</div>
+          <div class="tl-date">May 2021 — Present</div>
+        </div>
+        <div class="tl-company">● Google</div>
+        <p>Maintaining and improving the experimentation infrastructure which provides the means to run A/B tests and launches for all Google products, such as Ads, Search, Youtube, Apps, Maps, and Cloud.</p>
+      </article>
+
+      <article class="tl-item reveal" data-delay="1">
+        <div class="tl-head">
+          <div class="tl-role">Software Engineer</div>
+          <div class="tl-date">Sep 2019 — May 2021</div>
+        </div>
+        <div class="tl-company">AlertEnterprise</div>
+        <p>I collaborated on a team of 6 to architect the infrastructure solutions for new cloud-based product services running on Google Cloud Platform, containerized microservices using Docker, and built Kubernetes and Helm manifests used for deployments to Google Kubernetes Engine.</p>
+      </article>
+
+      <article class="tl-item reveal" data-delay="2">
+        <div class="tl-head">
+          <div class="tl-role">Software Engineer</div>
+          <div class="tl-date">Oct 2011 — Jan 2019</div>
+        </div>
+        <div class="tl-company">Orano</div>
+        <p>I designed, implemented, and tested software solutions for nuclear fuel manufacturing material handling, part tracking, and data storage and retrieval. The software applications were specifically for Siemens Programmable Logic Controllers and developed using Siemens STEP 7.</p>
+      </article>
+
+      <article class="tl-item reveal" data-delay="3">
+        <div class="tl-head">
+          <div class="tl-role">Mechanical Engineer</div>
+          <div class="tl-date">Jan 2015 — Apr 2017</div>
+        </div>
+        <div class="tl-company">Orano</div>
+        <p>I performed structural analysis on support structures for automation systems' hardware utilizing ANSYS Mechanical in order to verify and ensure the structures' integrity under extreme operating conditions.</p>
+      </article>
+    </div>
+
+    <div style="margin-top:36px;">
+      <a href="Resume_Valery-Nguyen.pdf" target="_blank" rel="noopener" class="hero-cta" style="background:transparent; color:var(--text); border:1px solid var(--border-strong);">
+        more details <span class="arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="eyebrow reveal">Chapter 03</div>
+    <h2 class="section-title reveal"><em>Skills</em></h2>
+    <p class="reveal" style="max-width:640px; font-size:17px; margin-bottom:40px;">Tools I've shipped production systems with — grouped by where they live in the stack.</p>
+
+    <div class="skill-groups">
+      <div class="skill-group reveal">
+        <h3>Frontend</h3>
+        <ul class="skill-list">
+          <li class="skill-chip"><i class="devicon-react-original colored"></i>React</li>
+          <li class="skill-chip"><i class="devicon-redux-original colored"></i>Redux</li>
+          <li class="skill-chip"><i class="devicon-angularjs-plain colored"></i>Angular</li>
+          <li class="skill-chip"><i class="devicon-javascript-plain colored"></i>JavaScript</li>
+          <li class="skill-chip"><i class="devicon-html5-plain colored"></i>HTML5</li>
+          <li class="skill-chip"><i class="devicon-css3-plain colored"></i>CSS3</li>
+          <li class="skill-chip"><i class="devicon-d3js-plain colored"></i>D3.js</li>
+        </ul>
+      </div>
+
+      <div class="skill-group reveal" data-delay="1">
+        <h3>Backend & Languages</h3>
+        <ul class="skill-list">
+          <li class="skill-chip"><i class="devicon-go-plain colored"></i>Go</li>
+          <li class="skill-chip"><i class="devicon-cplusplus-plain colored"></i>C++</li>
+          <li class="skill-chip"><i class="devicon-java-plain colored"></i>Java</li>
+          <li class="skill-chip"><i class="devicon-ruby-plain colored"></i>Ruby</li>
+          <li class="skill-chip"><i class="devicon-rails-plain colored"></i>Rails</li>
+          <li class="skill-chip"><i class="devicon-nodejs-plain colored"></i>Node.js</li>
+          <li class="skill-chip"><i class="devicon-express-original"></i>Express</li>
+        </ul>
+      </div>
+
+      <div class="skill-group reveal" data-delay="2">
+        <h3>Data</h3>
+        <ul class="skill-list">
+          <li class="skill-chip"><i class="devicon-mongodb-plain colored"></i>MongoDB</li>
+          <li class="skill-chip"><i class="devicon-postgresql-plain colored"></i>PostgreSQL</li>
+          <li class="skill-chip"><i class="devicon-mysql-plain colored"></i>MySQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-group reveal" data-delay="3">
+        <h3>Infra & Tooling</h3>
+        <ul class="skill-list">
+          <li class="skill-chip"><i class="devicon-docker-plain colored"></i>Docker</li>
+          <li class="skill-chip"><i class="devicon-heroku-plain colored"></i>Heroku</li>
+          <li class="skill-chip"><i class="devicon-github-original"></i>GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section" id="portfolio">
+    <div class="eyebrow reveal">Chapter 04</div>
+    <h2 class="section-title reveal"><em>Portfolio</em></h2>
+
+    <div class="bento">
+      <a class="bento-card reveal" href="https://github.com/valery-nguyen/somethingSpecial" target="_blank" rel="noopener">
+        <img src="images/port01.jpg" alt="somethingSpecial" />
+        <span class="bento-cta" aria-hidden="true">↗</span>
+        <div class="bento-overlay">
+          <h3>somethingSpecial</h3>
+          <p>Online Retailer Web App providing a wide range of unique gifts ideas for the users to choose and order from.</p>
+          <div class="tech-chips">
+            <span class="tech-chip">Ruby on Rails</span>
+            <span class="tech-chip">React.js</span>
+            <span class="tech-chip">Redux.js</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="bento-card reveal" data-delay="1" href="https://github.com/valery-nguyen/coolbnb" target="_blank" rel="noopener">
+        <img src="images/port02.jpg" alt="coolbnb" />
+        <span class="bento-cta" aria-hidden="true">↗</span>
+        <div class="bento-overlay">
+          <h3>coolbnb</h3>
+          <p>Service Web App giving users the possibility to search and book lodging, filtered by location, dates, type, and price.</p>
+          <div class="tech-chips">
+            <span class="tech-chip">MongoDB</span>
+            <span class="tech-chip">Express</span>
+            <span class="tech-chip">React</span>
+            <span class="tech-chip">Redux</span>
+            <span class="tech-chip">Node</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="bento-card reveal" data-delay="2" href="https://github.com/valery-nguyen/lightchat" target="_blank" rel="noopener">
+        <img src="images/port04.jpg" alt="lightchat" />
+        <span class="bento-cta" aria-hidden="true">↗</span>
+        <div class="bento-overlay">
+          <h3>lightchat</h3>
+          <p>Communication Web App giving users the possibility post messages on various channels, as well as send direct messages to other users.</p>
+          <div class="tech-chips">
+            <span class="tech-chip">GraphQL</span>
+            <span class="tech-chip">Docker</span>
+            <span class="tech-chip">MongoDB</span>
+            <span class="tech-chip">Express</span>
+            <span class="tech-chip">React</span>
+            <span class="tech-chip">Node</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="bento-card reveal" data-delay="3" href="https://github.com/valery-nguyen/GameOfThrones-D3" target="_blank" rel="noopener">
+        <img src="images/port03.jpg" alt="GameOfThrones-D3" />
+        <span class="bento-cta" aria-hidden="true">↗</span>
+        <div class="bento-overlay">
+          <h3>GameOfThrones-D3</h3>
+          <p>GameOfThrones-D3 explores the interactions between the various characters of HBO series Game of Thrones through several D3.js visualization techniques.</p>
+          <div class="tech-chips">
+            <span class="tech-chip">D3.js</span>
+            <span class="tech-chip">React</span>
+            <span class="tech-chip">Redux</span>
+            <span class="tech-chip">Express</span>
+            <span class="tech-chip">Node</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="eyebrow reveal">Chapter 05</div>
+    <h2 class="section-title reveal"><em>Contact</em></h2>
+
+    <div class="contact-grid">
+      <div>
+        <p class="reveal" style="font-size:17px; max-width:480px;">Reach out about roles, projects, or just an interesting conversation. I'll get back to you.</p>
+        <ul class="socials reveal" data-delay="1">
+          <li><a class="social-link" href="https://www.linkedin.com/in/valeryn/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.5 18H6V9.5h2.5V18zM7.25 8.25a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM18 18h-2.5v-4.5c0-1.07-.02-2.45-1.5-2.45s-1.73 1.17-1.73 2.37V18H9.75V9.5H12.2v1.16h.03a2.7 2.7 0 0 1 2.42-1.33c2.58 0 3.06 1.7 3.06 3.92V18z"/></svg>
+            LinkedIn
+          </a></li>
+          <li><a class="social-link" href="https://github.com/valery-nguyen" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.6 5.63.6 11.9c0 5.02 3.25 9.28 7.77 10.79.57.1.78-.25.78-.55v-2.1c-3.16.69-3.82-1.35-3.82-1.35-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.16-3.05-.11-.29-.5-1.44.11-3 0 0 .95-.3 3.1 1.17a10.74 10.74 0 0 1 5.64 0c2.15-1.47 3.1-1.17 3.1-1.17.62 1.56.23 2.71.12 3 .72.8 1.16 1.81 1.16 3.05 0 4.36-2.66 5.3-5.19 5.58.41.35.78 1.05.78 2.12v3.14c0 .3.2.66.79.55 4.51-1.51 7.76-5.77 7.76-10.79C23.4 5.63 18.27.5 12 .5z"/></svg>
+            GitHub
+          </a></li>
+        </ul>
+      </div>
+
+      <dl class="contact-card reveal" data-delay="2">
+        <div class="contact-row">
+          <dt>Address</dt>
+          <dd>San Jose, CA</dd>
+        </div>
+        <div class="contact-row">
+          <dt>Phone</dt>
+          <dd>
+            <span id="phoneText">(408) 886-8447</span>
+            <button class="copy-btn" data-copy="(408) 886-8447" aria-label="Copy phone number">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
+          </dd>
+        </div>
+        <div class="contact-row">
+          <dt>Email</dt>
+          <dd>
+            <a href="mailto:valery.nguyen@ucla.edu">valery.nguyen@ucla.edu</a>
+            <button class="copy-btn" data-copy="valery.nguyen@ucla.edu" aria-label="Copy email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>© <span id="year"></span> &nbsp; Valery Nguyen</span>
+  <span>Built with care · <a href="#intro">Back to top ↑</a></span>
+</footer>
+
+<script>
+  // Auto year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Theme toggle
+  const themeBtn = document.getElementById('themeToggle');
+  const themeIcon = document.getElementById('themeIcon');
+  const root = document.documentElement;
+  const stored = localStorage.getItem('theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  function setThemeIcon() {
+    const t = root.getAttribute('data-theme');
+    themeIcon.innerHTML = t === 'dark'
+      ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>'
+      : '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+  }
+  setThemeIcon();
+  themeBtn.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    setThemeIcon();
+  });
+
+  // Scroll progress
+  const progress = document.getElementById('progress');
+  function onScroll() {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    progress.style.width = pct + '%';
+  }
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Active nav via Intersection Observer
+  const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+  const sections = Array.from(navLinks).map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+  const navObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+      }
+    });
+  }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
+  sections.forEach(s => navObs.observe(s));
+
+  // Reveal on scroll
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        revealObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+  // Cursor-reactive ambient background
+  const ambient = document.querySelector('.ambient');
+  let ticking = false;
+  document.addEventListener('pointermove', (e) => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      ambient.style.setProperty('--mx', x + '%');
+      ambient.style.setProperty('--my', y + '%');
+      ticking = false;
+    });
+  });
+
+  // Copy-to-clipboard
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(btn.dataset.copy);
+        btn.classList.add('copied');
+        const original = btn.innerHTML;
+        btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+        setTimeout(() => { btn.classList.remove('copied'); btn.innerHTML = original; }, 1400);
+      } catch (err) { /* noop */ }
+    });
+  });
+
+  // Magnetic CTA
+  document.querySelectorAll('.hero-cta').forEach(btn => {
+    btn.addEventListener('pointermove', (e) => {
+      const r = btn.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width / 2;
+      const y = e.clientY - r.top - r.height / 2;
+      btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15 - 2}px)`;
+    });
+    btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
+  });
+</script>
+</body>
 </html>
